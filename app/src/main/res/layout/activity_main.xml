@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="196dp"
+        android:onClick="increaseNumber"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countView" />
+
+    <TextView
+        android:id="@+id/countView"
+        android:layout_width="99dp"
+        android:layout_height="57dp"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <ToggleButton
+        android:id="@+id/stopwatchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="ToggleButton"
+        android:textOff="Start"
+        android:textOn="Stop"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="348dp" />
+
+</android.support.constraint.ConstraintLayout>
